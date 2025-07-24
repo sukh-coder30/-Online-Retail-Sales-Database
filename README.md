@@ -73,7 +73,7 @@ CREATE TABLE orderitems (
     FOREIGN KEY (product_id) REFERENCES product(product_id)
 );
 
--- Payment Table
+Payment Table
 CREATE TABLE payment (
     pay_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
@@ -82,7 +82,7 @@ CREATE TABLE payment (
     Paymentmethod VARCHAR(50),
     FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
-=============================================================
+
 
 
 
